@@ -3,30 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Goal Gappa | मराठी Podcast</title>
-<meta name="description" content="Goal Gappa — प्रेरणादायी लोकांशी मनमोकळ्या गप्पा. १००% मराठी Podcast, करिअर, आयुष्य आणि प्रेरणा यावर.">
-<meta name="theme-color" content="#211710">
+<title>Goal Gappa | मराठी पॉडकास्ट</title>
+<meta name="description" content="Goal Gappa — प्रेरणादायी माणसांशी मनमोकळ्या गप्पा. १००% मराठी पॉडकास्ट, करिअर, आयुष्य आणि प्रेरणा यावर.">
+<meta name="theme-color" content="#2D2F5D">
 <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/tg4fgcWsrjIA2mytgOZnesMa94wuWXoezdsT4-DmqYR4RMt3nfQqrDLC18Us3cLRcskPnzRFIDM=s160-c-k-c0x00ffffff-no-rj">
-<meta property="og:title" content="Goal Gappa | मराठी Podcast">
-<meta property="og:description" content="प्रेरणादायी लोकांशी मनमोकळ्या गप्पा. १००% मराठी Podcast.">
+<meta property="og:title" content="Goal Gappa | मराठी पॉडकास्ट">
+<meta property="og:description" content="प्रेरणादायी माणसांशी मनमोकळ्या गप्पा. १००% मराठी पॉडकास्ट.">
 <meta property="og:image" content="https://yt3.googleusercontent.com/tg4fgcWsrjIA2mytgOZnesMa94wuWXoezdsT4-DmqYR4RMt3nfQqrDLC18Us3cLRcskPnzRFIDM=s160-c-k-c0x00ffffff-no-rj">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ground:#211710;
-    --surface:#2c2016;
-    --surface-2:#362718;
-    --gold:#e3a335;
-    --gold-soft:#f0c674;
-    --kumkum:#c1432f;
-    --ivory:#f4ead7;
-    --sand:#c2ac8c;
-    --hairline:rgba(244,234,215,0.14);
-    --display: 'Yatra One', 'Noto Sans Devanagari', serif;
-    --body: 'Noto Sans Devanagari', 'Inter', sans-serif;
+    --ground:#2D2F5D;
+    --surface:#363964;
+    --surface-2:#42457C;
+    --orange:#F29100;
+    --orange-soft:#FFB347;
+    --red:#C01016;
+    --ivory:#FFFFFF;
+    --sand:#B2B2B2;
+    --graydark:#595959;
+    --hairline:rgba(255,255,255,0.14);
+    --display: "Tiro Devanagari Marathi", serif;
+    --body: "Tiro Devanagari Marathi", serif;
     --label: 'Inter', sans-serif;
   }
 
@@ -41,8 +42,8 @@
   body{
     margin:0;
     background:
-      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(227,163,53,0.14), transparent 60%),
-      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(193,67,47,0.10), transparent 55%),
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(242,145,0,0.14), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(192,16,22,0.10), transparent 55%),
       var(--ground);
     color:var(--ivory);
     font-family:var(--body);
@@ -54,7 +55,7 @@
   img{ max-width:100%; display:block; }
 
   :focus-visible{
-    outline:2px solid var(--gold-soft);
+    outline:2px solid var(--orange-soft);
     outline-offset:3px;
     border-radius:4px;
   }
@@ -64,7 +65,7 @@
   /* ---------- Nav ---------- */
   .nav{
     position:sticky; top:0; z-index:50;
-    background:rgba(33,23,16,0.72);
+    background:rgba(24,25,51,0.72);
     backdrop-filter:blur(14px);
     -webkit-backdrop-filter:blur(14px);
     border-bottom:1px solid var(--hairline);
@@ -81,7 +82,7 @@
   .brand-mark{
     width:34px; height:34px; flex-shrink:0;
     border-radius:50%;
-    border:1.5px solid var(--gold);
+    border:1.5px solid var(--orange);
     object-fit:cover;
   }
   .nav-links{
@@ -92,15 +93,15 @@
     text-decoration:none; color:var(--sand); position:relative; padding:4px 0;
     transition:color 0.25s ease;
   }
-  .nav-links a:hover{ color:var(--gold-soft); }
+  .nav-links a:hover{ color:var(--orange-soft); }
   .nav-cta{
-    background:var(--kumkum); color:var(--ivory);
+    background:var(--red); color:var(--ivory);
     font-family:var(--label); font-weight:600; font-size:0.9em;
     padding:10px 20px; border-radius:999px; text-decoration:none;
     white-space:nowrap;
     transition:background 0.25s ease, transform 0.2s ease;
   }
-  .nav-cta:hover{ background:#a8382a; transform:translateY(-1px); }
+  .nav-cta:hover{ background:#960D12; transform:translateY(-1px); }
 
   .nav-toggle{ display:none; }
 
@@ -113,18 +114,18 @@
   }
   .hero-logo{
     width:72px; height:72px; border-radius:50%;
-    border:2px solid var(--gold);
-    box-shadow:0 0 0 6px rgba(227,163,53,0.12);
+    border:2px solid var(--orange);
+    box-shadow:0 0 0 6px rgba(242,145,0,0.12);
     margin:0 auto 24px;
   }
   .eyebrow{
     font-family:var(--label); font-weight:600; font-size:0.8em;
     letter-spacing:0.16em; text-transform:uppercase;
-    color:var(--gold-soft); margin-bottom:22px;
+    color:var(--orange-soft); margin-bottom:22px;
     display:inline-flex; align-items:center; gap:10px;
   }
   .eyebrow::before, .eyebrow::after{
-    content:""; width:26px; height:1px; background:var(--gold-soft); opacity:0.6;
+    content:""; width:26px; height:1px; background:var(--orange-soft); opacity:0.6;
   }
   .hero h1{
     font-family:var(--display);
@@ -146,24 +147,27 @@
     color:var(--sand); font-size:1.05em;
   }
 
-  .steam-wrap{
-    display:flex; justify-content:center; margin:44px 0 8px;
+  .eq-wrap{
+    display:flex; justify-content:center; align-items:flex-end; gap:6px;
+    height:40px; margin:44px 0 8px;
   }
-  .steam{
-    width:120px; height:70px;
+  .eq-bar{
+    width:5px; border-radius:3px;
+    background:linear-gradient(180deg, var(--orange), var(--red));
+    animation:eq 1.1s ease-in-out infinite;
+    transform-origin:bottom;
   }
-  .steam path{
-    stroke:var(--gold); stroke-width:3; fill:none; stroke-linecap:round;
-    opacity:0.55;
-    stroke-dasharray:60;
-    animation:rise 4.5s ease-in-out infinite;
+  .eq-bar:nth-child(1){ height:14px; animation-delay:0s; }
+  .eq-bar:nth-child(2){ height:26px; animation-delay:0.15s; }
+  .eq-bar:nth-child(3){ height:38px; animation-delay:0.3s; }
+  .eq-bar:nth-child(4){ height:22px; animation-delay:0.45s; }
+  .eq-bar:nth-child(5){ height:12px; animation-delay:0.6s; }
+  @keyframes eq{
+    0%, 100%{ transform:scaleY(0.5); opacity:0.7; }
+    50%{ transform:scaleY(1); opacity:1; }
   }
-  .steam path:nth-child(2){ animation-delay:0.6s; opacity:0.4; }
-  .steam path:nth-child(3){ animation-delay:1.2s; opacity:0.3; }
-  @keyframes rise{
-    0%{ stroke-dashoffset:60; opacity:0; }
-    30%{ opacity:0.55; }
-    100%{ stroke-dashoffset:0; opacity:0; }
+  @media (prefers-reduced-motion: reduce){
+    .eq-bar{ animation:none; transform:scaleY(0.8); }
   }
 
   .listen-buttons{
@@ -179,7 +183,7 @@
     background:var(--surface);
     transition:transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
   }
-  .listen-btn:hover{ transform:translateY(-2px); border-color:var(--gold); background:var(--surface-2); }
+  .listen-btn:hover{ transform:translateY(-2px); border-color:var(--orange); background:var(--surface-2); }
   .listen-btn.spotify svg{ fill:#1DB954; }
   .listen-btn.youtube svg{ fill:#FF3B30; }
   .listen-btn svg{ width:20px; height:20px; }
@@ -200,12 +204,12 @@
   }
   .bubble h3{
     font-family:var(--display); font-weight:400; font-size:1.3em;
-    margin:0 0 10px; color:var(--gold-soft);
+    margin:0 0 10px; color:var(--orange-soft);
   }
   .bubble p{ margin:0; color:var(--sand); font-size:0.98em; }
   .bubble-mark{
     font-family:var(--display); font-size:2.4em; line-height:1;
-    color:var(--kumkum); opacity:0.85; margin-bottom:8px; display:block;
+    color:var(--red); opacity:0.85; margin-bottom:8px; display:block;
   }
 
   /* ---------- About block ---------- */
@@ -229,11 +233,11 @@
   .about-contact{
     display:inline-flex; align-items:center; gap:8px;
     margin-top:8px; font-family:var(--label); font-weight:600;
-    color:var(--gold-soft); text-decoration:none; font-size:0.95em;
+    color:var(--orange-soft); text-decoration:none; font-size:0.95em;
     border-bottom:1px solid transparent;
     transition:border-color 0.2s ease;
   }
-  .about-contact:hover{ border-color:var(--gold-soft); }
+  .about-contact:hover{ border-color:var(--orange-soft); }
   .thread{
     width:100%; height:auto;
   }
@@ -256,13 +260,13 @@
     padding:26px;
     transition:border-color 0.25s ease, transform 0.25s ease;
   }
-  .offer-card:hover{ border-color:var(--gold); transform:translateY(-4px); }
+  .offer-card:hover{ border-color:var(--orange); transform:translateY(-4px); }
   .offer-card-wide{ grid-column:1 / -1; }
   .offer-icon{
     font-size:1.7em; line-height:1; flex-shrink:0;
     width:48px; height:48px; border-radius:14px;
     display:flex; align-items:center; justify-content:center;
-    background:rgba(227,163,53,0.14);
+    background:rgba(242,145,0,0.14);
   }
   .offer-card h3{
     font-family:var(--body); font-weight:600; font-size:1.08em;
@@ -272,12 +276,12 @@
   .offer-cta{
     display:inline-flex; align-items:center; gap:10px;
     margin-top:34px;
-    background:var(--kumkum); color:var(--ivory);
+    background:var(--red); color:var(--ivory);
     font-family:var(--label); font-weight:600; font-size:0.95em;
     padding:14px 26px; border-radius:999px; text-decoration:none;
     transition:background 0.25s ease, transform 0.2s ease;
   }
-  .offer-cta:hover{ background:#a8382a; transform:translateY(-2px); }
+  .offer-cta:hover{ background:#960D12; transform:translateY(-2px); }
 
   /* ---------- Episodes ---------- */
   .episodes-section{ padding:10px 0 100px; }
@@ -293,21 +297,42 @@
     font-family:var(--label); color:var(--sand); font-size:0.95em;
   }
 
-  .episodes-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-    gap:28px;
+  .carousel-wrap{
+    position:relative;
+    display:flex; align-items:center; gap:10px;
   }
+  .episodes-carousel{
+    display:flex;
+    gap:24px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    padding:4px 4px 14px;
+    margin:0 -4px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:var(--orange) transparent;
+  }
+  .episodes-carousel::-webkit-scrollbar{ height:6px; }
+  .episodes-carousel::-webkit-scrollbar-thumb{ background:var(--hairline); border-radius:10px; }
+  .episodes-carousel::-webkit-scrollbar-thumb:hover{ background:var(--orange); }
+
   .episode{
+    flex:0 0 auto;
+    width:min(320px, 78vw);
+    scroll-snap-align:start;
     background:var(--surface);
     border:1px solid var(--hairline);
     border-radius:18px;
     overflow:hidden;
     transition:transform 0.3s ease, border-color 0.3s ease;
   }
-  .episode:hover{ transform:translateY(-6px); border-color:var(--gold); }
+  .episode:hover{ transform:translateY(-6px); border-color:var(--orange); }
   .episode-media{
-    position:relative; aspect-ratio:16/9; overflow:hidden; background:#000;
+    position:relative; display:block; width:100%;
+    aspect-ratio:16/9; overflow:hidden; background:#000;
+    border:none; padding:0; margin:0; cursor:pointer;
+    font:inherit; color:inherit;
   }
   .episode-media img{
     width:100%; height:100%; object-fit:cover;
@@ -318,20 +343,26 @@
     position:absolute; inset:0;
     display:flex; align-items:center; justify-content:center;
     background:linear-gradient(180deg, rgba(20,14,9,0) 40%, rgba(20,14,9,0.75) 100%);
+    transition:opacity 0.25s ease;
   }
+  .episode-media:hover .play-overlay{ background:linear-gradient(180deg, rgba(20,14,9,0.1) 30%, rgba(20,14,9,0.8) 100%); }
   .play-circle{
     width:56px; height:56px; border-radius:50%;
-    background:rgba(227,163,53,0.92);
+    background:rgba(242,145,0,0.92);
     display:flex; align-items:center; justify-content:center;
     border:none; cursor:pointer;
     transition:transform 0.25s ease, background 0.25s ease;
   }
-  .play-circle:hover{ transform:scale(1.08); background:var(--kumkum); }
+  .episode-media:hover .play-circle{ transform:scale(1.08); background:var(--red); }
   .play-circle svg{ width:20px; height:20px; fill:var(--ground); margin-left:3px; }
+  .episode-media.playing{ cursor:default; }
+  .episode-media.playing iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0;
+  }
   .episode-content{ padding:20px 22px 24px; }
   .episode-tag{
     font-family:var(--label); font-size:0.72em; font-weight:700;
-    letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--orange);
     margin-bottom:8px; display:block;
   }
   .episode h3{
@@ -340,8 +371,26 @@
   }
   .episode p{ margin:0; color:var(--sand); font-size:0.9em; }
 
-  /* ---------- Full YouTube feed ---------- */
-  .feed-section{ padding:10px 0 100px; }
+  .car-btn{
+    flex:0 0 auto;
+    width:44px; height:44px; border-radius:50%;
+    background:var(--surface); border:1px solid var(--hairline);
+    color:var(--orange-soft); cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:border-color 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+  }
+  .car-btn:hover{ border-color:var(--orange); background:var(--surface-2); }
+  .car-btn:disabled{ opacity:0.35; cursor:default; }
+  .car-btn:disabled:hover{ border-color:var(--hairline); background:var(--surface); }
+
+  /* ---------- Full YouTube feed (merged into episodes section) ---------- */
+  .feed-block{ margin-top:64px; }
+  .feed-subhead{ margin-bottom:26px; }
+  .feed-subhead h3{
+    font-family:var(--display); font-weight:400;
+    font-size:clamp(1.3em, 2.4vw, 1.7em); margin:0; color:var(--ivory);
+  }
+  .feed-subhead span{ font-family:var(--label); color:var(--sand); font-size:0.9em; }
   .feed-frame{
     position:relative; width:100%;
     aspect-ratio:16/9;
@@ -355,12 +404,12 @@
   .feed-more{
     display:inline-flex; align-items:center; gap:10px;
     margin-top:24px;
-    color:var(--gold-soft); text-decoration:none;
+    color:var(--orange-soft); text-decoration:none;
     font-family:var(--label); font-weight:600; font-size:0.95em;
     border-bottom:1px solid transparent;
     transition:border-color 0.2s ease;
   }
-  .feed-more:hover{ border-color:var(--gold-soft); }
+  .feed-more:hover{ border-color:var(--orange-soft); }
 
   /* ---------- Footer ---------- */
   footer{
@@ -379,7 +428,7 @@
     font-family:var(--label); font-size:0.9em;
   }
   .footer-links a{ color:var(--sand); text-decoration:none; }
-  .footer-links a:hover{ color:var(--gold-soft); }
+  .footer-links a:hover{ color:var(--orange-soft); }
   .footer-note{
     font-family:var(--label); font-size:0.8em; color:var(--sand);
     opacity:0.7; margin-top:26px; text-align:center;
@@ -389,19 +438,25 @@
     position:fixed; right:22px; bottom:22px; z-index:60;
     width:46px; height:46px; border-radius:50%;
     background:var(--surface-2); border:1px solid var(--hairline);
-    color:var(--gold-soft); cursor:pointer;
+    color:var(--orange-soft); cursor:pointer;
     display:flex; align-items:center; justify-content:center;
     opacity:0; transform:translateY(10px); pointer-events:none;
     transition:opacity 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
   }
   .to-top.visible{ opacity:1; transform:translateY(0); pointer-events:auto; }
-  .to-top:hover{ border-color:var(--gold); }
+  .to-top:hover{ border-color:var(--orange); }
 
   @media (max-width:860px){
     .gappa-grid{ grid-template-columns:1fr; }
     .about-card{ grid-template-columns:1fr; }
     .offer-grid{ grid-template-columns:1fr; }
     .nav-links{ display:none; }
+    .car-btn{ width:38px; height:38px; }
+    .episode{ width:min(280px, 80vw); }
+  }
+  @media (max-width:520px){
+    .carousel-wrap{ gap:6px; }
+    .car-btn{ width:34px; height:34px; }
   }
 </style>
 </head>
@@ -414,35 +469,35 @@
       Goal Gappa
     </a>
     <ul class="nav-links">
-      <li><a href="#home">मुख्यपान</a></li>
+      <li><a href="#home">मुख्यपृष्ठ</a></li>
       <li><a href="#about">आमच्याबद्दल</a></li>
-      <li><a href="#episodes">एपिसोड्स</a></li>
+      <li><a href="#episodes">भाग</a></li>
       <li><a href="#offer">ब्रँड्ससाठी</a></li>
       <li><a href="#contact">संपर्क</a></li>
     </ul>
-    <a class="nav-cta" href="https://www.youtube.com/@GoalGappaPodcast" target="_blank" rel="noopener">Subscribe</a>
+    <a class="nav-cta" href="https://www.youtube.com/@GoalGappaPodcast" target="_blank" rel="noopener">सबस्क्राईब करा</a>
   </div>
 </nav>
 
 <header class="hero" id="home">
   <div class="wrap">
     <img class="hero-logo" src="https://yt3.googleusercontent.com/tg4fgcWsrjIA2mytgOZnesMa94wuWXoezdsT4-DmqYR4RMt3nfQqrDLC18Us3cLRcskPnzRFIDM=s160-c-k-c0x00ffffff-no-rj" alt="Goal Gappa" width="72" height="72">
-    <span class="eyebrow">१००% मराठी Podcast</span>
+    <span class="eyebrow">१००% मराठी पॉडकास्ट</span>
     <h1>मराठीशी जोडलेले राहा आणि<br>तुमची ज्ञानाची भूक भागवा!</h1>
 
     <svg class="hero-underline" viewBox="0 0 420 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4 14 Q 40 2, 80 14 T 156 14 T 232 14 T 308 14 T 384 14 T 416 12"
-            stroke="#c1432f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            stroke="#C01016" stroke-width="3.5" fill="none" stroke-linecap="round"/>
     </svg>
 
     <p class="hero-sub">प्रेरणादायी माणसांशी मनमोकळ्या गप्पा — करिअर, आयुष्य आणि नव्या दृष्टिकोनासाठी, दर आठवड्याला एक नवा आवाज.</p>
 
-    <div class="steam-wrap" aria-hidden="true">
-      <svg class="steam" viewBox="0 0 120 70">
-        <path d="M40 65 C 30 50, 50 45, 42 30 C 36 18, 48 12, 44 2"/>
-        <path d="M60 65 C 50 50, 70 45, 62 30 C 56 18, 68 12, 64 2"/>
-        <path d="M80 65 C 70 50, 90 45, 82 30 C 76 18, 88 12, 84 2"/>
-      </svg>
+    <div class="eq-wrap" aria-hidden="true">
+      <span class="eq-bar"></span>
+      <span class="eq-bar"></span>
+      <span class="eq-bar"></span>
+      <span class="eq-bar"></span>
+      <span class="eq-bar"></span>
     </div>
 
     <div class="listen-buttons">
@@ -452,7 +507,7 @@
       </a>
       <a href="https://www.youtube.com/@GoalGappaPodcast" class="listen-btn youtube" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.4 3.6z"/></svg>
-        YouTube वर बघा
+        YouTube वर पाहा
       </a>
     </div>
   </div>
@@ -473,7 +528,7 @@
     <div class="bubble">
       <span class="bubble-mark">“</span>
       <h3>१००% मराठी आवाज</h3>
-      <p>जिज्ञासू मनांसाठी घडवलेला, अस्सल मराठी भाषेतला Podcast.</p>
+      <p>जिज्ञासू मनांसाठी घडवलेला, अस्सल मराठी भाषेतला पॉडकास्ट.</p>
     </div>
   </div>
 </section>
@@ -482,20 +537,20 @@
   <div class="about-card">
     <div>
       <h2>Goal Gappa म्हणजे काय?</h2>
-      <p>आमच्या Goal Gappa Podcast वर, आम्ही मराठीतून प्रेरणादायी, मनोरंजक आणि ज्ञानवर्धक गप्पा घेऊन येतो. प्रत्येक एपिसोडमध्ये आम्ही अशा लोकांशी बोलतो जे लाखो-कोटी लोकांना प्रेरणा देतील आणि त्यांच्या जीवनाला नवा दृष्टिकोन मिळवून देतील.</p>
-      <p>तुम्ही किंवा तुमच्या ओळखीचे कोणी प्रेरणादायी व्यक्तिमत्त्व असेल, ज्यांची गोष्ट इतरांचे प्रबोधन करू शकेल — आम्हाला नक्की संपर्क साधा आणि आमच्या Podcast चा भाग व्हा!</p>
-      <a class="about-contact" href="mailto:goalgappapodcast@gmail.com">
-        goalgappapodcast@gmail.com
+      <p>आमच्या Goal Gappa या पॉडकास्टवर आम्ही मराठीतून प्रेरणादायी, मनोरंजक आणि ज्ञानवर्धक गप्पा घेऊन येतो. प्रत्येक भागात आम्ही अशा माणसांशी बोलतो, जे लाखो-कोटी लोकांना प्रेरणा देतील आणि त्यांच्या आयुष्याला नवा दृष्टिकोन मिळवून देतील.</p>
+      <p>तुम्ही किंवा तुमच्या ओळखीचे कोणी प्रेरणादायी व्यक्तिमत्त्व असेल, ज्यांची गोष्ट इतरांचे प्रबोधन करू शकेल, तर आम्हाला नक्की संपर्क साधा आणि आमच्या पॉडकास्टचा भाग व्हा!</p>
+      <a class="about-contact" href="mailto:goalgappashow@gmail.com">
+        goalgappashow@gmail.com
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
     <svg class="thread" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 30 Q 90 5, 150 40 T 290 40" stroke="#e3a335" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
-      <path d="M20 90 Q 100 60, 160 100 T 280 95" stroke="#c1432f" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
-      <path d="M15 150 Q 95 120, 155 160 T 285 155" stroke="#f0c674" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
-      <circle cx="150" cy="40" r="5" fill="#e3a335"/>
-      <circle cx="160" cy="100" r="5" fill="#c1432f"/>
-      <circle cx="155" cy="160" r="5" fill="#f0c674"/>
+      <path d="M10 30 Q 90 5, 150 40 T 290 40" stroke="#F29100" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path d="M20 90 Q 100 60, 160 100 T 280 95" stroke="#C01016" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M15 150 Q 95 120, 155 160 T 285 155" stroke="#FFB347" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+      <circle cx="150" cy="40" r="5" fill="#F29100"/>
+      <circle cx="160" cy="100" r="5" fill="#C01016"/>
+      <circle cx="155" cy="160" r="5" fill="#FFB347"/>
     </svg>
   </div>
 </section>
@@ -533,108 +588,119 @@
       <span class="offer-icon">🎙️</span>
       <div>
         <h3>ऑरगॅनिक आणि कस्टमाईज्ड प्रमोशन</h3>
-        <p>तुमच्या उत्पादनाची माहिती आम्ही एपिसोडमध्ये अगदी नैसर्गिकरीत्या गुंफून सांगतो, जेणेकरून ती श्रोत्यांना केवळ एक जाहिरात न वाटता, एक प्रामाणिक शिफारस वाटते.</p>
+        <p>तुमच्या उत्पादनाची माहिती आम्ही भागांमध्ये अगदी नैसर्गिकरीत्या गुंफून सांगतो, जेणेकरून ती श्रोत्यांना केवळ एक जाहिरात न वाटता, एक प्रामाणिक शिफारस वाटते.</p>
       </div>
     </div>
     <div class="offer-card offer-card-wide">
       <span class="offer-icon">📈</span>
       <div>
         <h3>३६०° डिजिटल आणि सोशल मीडिया प्रमोशन</h3>
-        <p>आमच्यासोबत जोडले गेल्यावर तुमचे प्रमोशन केवळ ऑडिओपुरते मर्यादित राहत नाही. आम्ही यूट्यूब व्हिडिओज, हायलाईट्स आणि इन्स्टाग्राम रील्सच्या (Reels/Shorts) माध्यमातूनही तुमच्या ब्रँडचे प्रभावी मार्केटिंग करतो.</p>
+        <p>आमच्यासोबत जोडले गेल्यावर तुमचे प्रमोशन केवळ ऑडिओपुरते मर्यादित राहत नाही. आम्ही यूट्यूब व्हिडिओ, हायलाईट्स आणि इन्स्टाग्राम रील्सच्या (Reels/Shorts) माध्यमातूनही तुमच्या ब्रँडचे प्रभावी मार्केटिंग करतो.</p>
       </div>
     </div>
   </div>
 
-  <a class="offer-cta" href="mailto:goalgappapodcast@gmail.com">ब्रँड कोलॅबोरेशनसाठी संपर्क करा
+  <a class="offer-cta" href="mailto:goalgappashow@gmail.com">ब्रँड कोलॅबोरेशनसाठी संपर्क करा
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
   </a>
 </section>
 
 <section class="episodes-section wrap" id="episodes">
   <div class="section-head">
-    <h2>ठळक एपिसोड्स</h2>
-    <span>दर आठवड्याला एक नवी गोष्ट</span>
+    <h2>भाग</h2>
+    <span>थेट इथेच पाहा — क्लिक करा आणि सुरू करा</span>
   </div>
-  <div class="episodes-grid">
 
-    <article class="episode">
-      <a class="episode-media" href="https://www.youtube.com/watch?v=qFF9m-1oL5g" target="_blank" rel="noopener" aria-label="Bitcoin सहज सोप्या भाषेत हा एपिसोड बघा">
-        <img src="https://img.youtube.com/vi/qFF9m-1oL5g/maxresdefault.jpg" alt="Bitcoin सहज सोप्या भाषेत | श्रीपाद जोशी">
-        <span class="play-overlay">
-          <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        </span>
-      </a>
-      <div class="episode-content">
-        <span class="episode-tag">Finance</span>
-        <h3>Bitcoin सहज सोप्या भाषेत</h3>
-        <p>श्रीपाद जोशी · Senior Solution Architect, Fintech</p>
-      </div>
-    </article>
+  <div class="carousel-wrap">
+    <button class="car-btn car-prev" type="button" aria-label="मागचा भाग">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
 
-    <article class="episode">
-      <a class="episode-media" href="https://www.youtube.com/watch?v=Ro-zF28Jz70" target="_blank" rel="noopener" aria-label="माणसाला घडवणारे मंत्र हा एपिसोड बघा">
-        <img src="https://img.youtube.com/vi/Ro-zF28Jz70/maxresdefault.jpg" alt="माणसाला घडवणारे मंत्र">
-        <span class="play-overlay">
-          <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        </span>
-      </a>
-      <div class="episode-content">
-        <span class="episode-tag">Spirituality</span>
-        <h3>माणसाला घडवणारे मंत्र</h3>
-        <p>चंद्रशेखर निलळे · संत साहित्याचे अभ्यासक</p>
-      </div>
-    </article>
+    <div class="episodes-carousel" id="episodesCarousel">
 
-    <article class="episode">
-      <a class="episode-media" href="https://www.youtube.com/watch?v=_aWiVcWOnbM" target="_blank" rel="noopener" aria-label="स्पंदन हृदयाच्या समीट कक्षात हा एपिसोड बघा">
-        <img src="https://img.youtube.com/vi/_aWiVcWOnbM/maxresdefault.jpg" alt="स्पंदन हृदयाच्या समीट कक्षात">
-        <span class="play-overlay">
-          <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        </span>
-      </a>
-      <div class="episode-content">
-        <span class="episode-tag">डॉक्टर दांपत्याचा प्रवास</span>
-        <h3>स्पंदन हृदयाच्या समीट कक्षात</h3>
-        <p>डॉ. रिजवान मुजावर व डॉ. शबाना रिजवान मुजावर</p>
-      </div>
-    </article>
+      <article class="episode">
+        <button class="episode-media" type="button" data-video-id="qFF9m-1oL5g" aria-label="Bitcoin सहज सोप्या भाषेत हा भाग इथेच सुरू करा">
+          <img src="https://img.youtube.com/vi/qFF9m-1oL5g/maxresdefault.jpg" alt="Bitcoin सहज सोप्या भाषेत | श्रीपाद जोशी" loading="lazy">
+          <span class="play-overlay">
+            <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </span>
+        </button>
+        <div class="episode-content">
+          <span class="episode-tag">अर्थकारण</span>
+          <h3>Bitcoin सहज सोप्या भाषेत</h3>
+          <p>श्रीपाद जोशी · सीनियर सोल्युशन आर्किटेक्ट, फिनटेक</p>
+        </div>
+      </article>
 
-    <article class="episode">
-      <a class="episode-media" href="https://www.youtube.com/watch?v=6JaQNsRiTSM" target="_blank" rel="noopener" aria-label="जंगलातील अद्भुत विश्व हा एपिसोड बघा">
-        <img src="https://img.youtube.com/vi/6JaQNsRiTSM/maxresdefault.jpg" alt="जंगलातील अद्भुत विश्व">
-        <span class="play-overlay">
-          <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        </span>
-      </a>
-      <div class="episode-content">
-        <span class="episode-tag">Nature</span>
-        <h3>जंगलातील अद्भुत विश्व...</h3>
-        <p>मकरंद केतकर · निसर्ग आणि वन्यजीव अभ्यासक</p>
-      </div>
-    </article>
+      <article class="episode">
+        <button class="episode-media" type="button" data-video-id="Ro-zF28Jz70" aria-label="माणसाला घडवणारे मंत्र हा भाग इथेच सुरू करा">
+          <img src="https://img.youtube.com/vi/Ro-zF28Jz70/maxresdefault.jpg" alt="माणसाला घडवणारे मंत्र" loading="lazy">
+          <span class="play-overlay">
+            <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </span>
+        </button>
+        <div class="episode-content">
+          <span class="episode-tag">अध्यात्म</span>
+          <h3>माणसाला घडवणारे मंत्र</h3>
+          <p>चंद्रशेखर निलळे · संत साहित्याचे अभ्यासक</p>
+        </div>
+      </article>
 
+      <article class="episode">
+        <button class="episode-media" type="button" data-video-id="_aWiVcWOnbM" aria-label="स्पंदन हृदयाच्या समीट कक्षात हा भाग इथेच सुरू करा">
+          <img src="https://img.youtube.com/vi/_aWiVcWOnbM/maxresdefault.jpg" alt="स्पंदन हृदयाच्या समीट कक्षात" loading="lazy">
+          <span class="play-overlay">
+            <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </span>
+        </button>
+        <div class="episode-content">
+          <span class="episode-tag">डॉक्टर दांपत्याचा प्रवास</span>
+          <h3>स्पंदन हृदयाच्या समीट कक्षात</h3>
+          <p>डॉ. रिजवान मुजावर व डॉ. शबाना रिजवान मुजावर</p>
+        </div>
+      </article>
+
+      <article class="episode">
+        <button class="episode-media" type="button" data-video-id="6JaQNsRiTSM" aria-label="जंगलातील अद्भुत विश्व हा भाग इथेच सुरू करा">
+          <img src="https://img.youtube.com/vi/6JaQNsRiTSM/maxresdefault.jpg" alt="जंगलातील अद्भुत विश्व" loading="lazy">
+          <span class="play-overlay">
+            <span class="play-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </span>
+        </button>
+        <div class="episode-content">
+          <span class="episode-tag">निसर्ग</span>
+          <h3>जंगलातील अद्भुत विश्व...</h3>
+          <p>मकरंद केतकर · निसर्ग आणि वन्यजीव अभ्यासक</p>
+        </div>
+      </article>
+
+    </div>
+
+    <button class="car-btn car-next" type="button" aria-label="पुढचा भाग">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
   </div>
-</section>
 
-<section class="feed-section wrap" id="all-episodes">
-  <div class="section-head">
-    <h2>सर्व एपिसोड्स</h2>
-    <span>थेट YouTube वरून, आपोआप अपडेट होणारे</span>
+  <div class="feed-block">
+    <div class="section-head feed-subhead">
+      <h3>अजून बरंच काही — सर्व भाग</h3>
+      <span>थेट YouTube वरून, आपोआप अपडेट होणारे</span>
+    </div>
+    <div class="feed-frame">
+      <iframe
+        src="https://www.youtube.com/embed/videoseries?list=UUJ6vUDmjILVwR7zub-ECdaQ"
+        title="Goal Gappa — सर्व भाग"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <a class="feed-more" href="https://www.youtube.com/@GoalGappaPodcast/videos" target="_blank" rel="noopener">
+      चॅनलवरील सर्व भाग पाहा
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
   </div>
-  <div class="feed-frame">
-    <iframe
-      src="https://www.youtube.com/embed/videoseries?list=UUJ6vUDmjILVwR7zub-ECdaQ"
-      title="Goal Gappa — सर्व एपिसोड्स"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <a class="feed-more" href="https://www.youtube.com/@GoalGappaPodcast/videos" target="_blank" rel="noopener">
-    चॅनलवर सर्व व्हिडिओज बघा
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-  </a>
 </section>
 
 <footer id="contact">
@@ -642,12 +708,12 @@
     <div class="footer-inner">
       <div class="footer-brand">Goal Gappa</div>
       <ul class="footer-links">
-        <li><a href="mailto:goalgappapodcast@gmail.com">goalgappapodcast@gmail.com</a></li>
+        <li><a href="mailto:goalgappashow@gmail.com">goalgappashow@gmail.com</a></li>
         <li><a href="https://www.youtube.com/@GoalGappaPodcast" target="_blank" rel="noopener">YouTube</a></li>
         <li><a href="https://open.spotify.com/show/2FTSyLCsaYTumaxzed2PPG?si=EJKabAhSTvu8FIxe37c-wg" target="_blank" rel="noopener">Spotify</a></li>
       </ul>
     </div>
-    <div class="footer-note">© 2026 Goal Gappa Podcast. सर्व हक्क राखीव.</div>
+    <div class="footer-note">© २०२६ Goal Gappa. सर्व हक्क राखीव.</div>
   </div>
 </footer>
 
@@ -656,6 +722,38 @@
 </button>
 
 <script>
+  // Click-to-play episodes inline (no redirect to YouTube)
+  document.querySelectorAll('.episode-media').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-video-id');
+      if (!id || btn.classList.contains('playing')) return;
+      btn.classList.add('playing');
+      btn.innerHTML = `<iframe
+          src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0"
+          title="Goal Gappa episode"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>`;
+    });
+  });
+
+  // Episode carousel prev/next controls
+  const track = document.getElementById('episodesCarousel');
+  const prevBtn = document.querySelector('.car-prev');
+  const nextBtn = document.querySelector('.car-next');
+  if (track && prevBtn && nextBtn) {
+    const scrollAmount = () => (track.querySelector('.episode')?.offsetWidth || 300) + 24;
+    prevBtn.addEventListener('click', () => track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }));
+    nextBtn.addEventListener('click', () => track.scrollBy({ left: scrollAmount(), behavior: 'smooth' }));
+    const updateCarBtns = () => {
+      prevBtn.disabled = track.scrollLeft <= 4;
+      nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    };
+    track.addEventListener('scroll', updateCarBtns, { passive: true });
+    window.addEventListener('resize', updateCarBtns);
+    updateCarBtns();
+  }
+
   // Active nav-link highlighting on scroll
   const sections = document.querySelectorAll('section[id], header[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
@@ -666,7 +764,7 @@
       if (window.scrollY >= top) current = sec.id;
     });
     navLinks.forEach(link => {
-      link.style.color = link.getAttribute('href') === '#' + current ? 'var(--gold-soft)' : '';
+      link.style.color = link.getAttribute('href') === '#' + current ? 'var(--orange-soft)' : '';
     });
   };
   document.addEventListener('scroll', setActive, { passive: true });
