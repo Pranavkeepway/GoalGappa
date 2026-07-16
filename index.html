@@ -384,23 +384,45 @@
   .car-btn:disabled:hover{ border-color:var(--hairline); background:var(--surface); }
 
   /* ---------- Full YouTube feed (merged into episodes section) ---------- */
-  .feed-block{ margin-top:64px; }
-  .feed-subhead{ margin-bottom:26px; }
-  .feed-subhead h3{
-    font-family:var(--display); font-weight:400;
-    font-size:clamp(1.3em, 2.4vw, 1.7em); margin:0; color:var(--ivory);
-  }
-  .feed-subhead span{ font-family:var(--label); color:var(--sand); font-size:0.9em; }
-  
-  .feed-frame {
+  /* मुख्य कंटेनर (Main Container) */
+.feed-block {
+  /* हे संपूर्ण ब्लॉकला मोबाईलवर ९०% आणि मोठ्या स्क्रीनवर ८००px मर्यादेत ठेवेल */
+  width: 90%;
+  max-width: 800px;
+  /* हे संपूर्ण ब्लॉकला स्क्रीनच्या बरोबर मध्यभागी (Center) आणेल */
+  margin: 64px auto 0 auto; 
+  /* सर्व घटक (Heading, Video, Link) मध्यभागी एका खाली एक आणण्यासाठी Flexbox चा वापर */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+/* हेडिंगचा भाग */
+.feed-subhead {
+  margin-bottom: 26px;
+  text-align: center; /* टेक्स्ट सेंटर करण्यासाठी */
+  width: 100%;
+}
+
+.feed-subhead h3 {
+  font-family: var(--display); 
+  font-weight: 400;
+  font-size: clamp(1.3em, 2.4vw, 1.7em); 
+  margin: 0; 
+  color: var(--ivory);
+}
+
+.feed-subhead span {
+  font-family: var(--label); 
+  color: var(--sand); 
+  font-size: 0.9em; 
+}
+
+/* व्हिडिओ फ्रेम */
+.feed-frame {
   position: relative;
-  /* width: 100% ऐवजी आपण 90% किंवा 95% वापरू शकतो, जेणेकरून मोबाईलवर कडेला थोडी जागा राहील */
-  width: 90%; 
-  /* मोठ्या स्क्रीन्ससाठी (Desktop/Tablet) जास्तीत जास्त किती मोठी साईज हवी ते सेट करा */
-  max-width: 800px; 
-  /* हे प्रॉपर्टी फ्रेमला बरोबर Center ला आणेल */
-  margin: 0 auto; 
-  
+  /* आता फ्रेमची width 100% ठेवली आहे कारण मुख्य .feed-block आधीच सेट केला आहे */
+  width: 100%; 
   aspect-ratio: 16/9;
   border-radius: 20px; 
   overflow: hidden;
@@ -411,20 +433,29 @@
 .feed-frame iframe {
   position: absolute; 
   inset: 0; 
-  /* iframe ला मात्र width: 100% च ठेवावे लागेल, जेणेकरून ते वरील .feed-frame मध्ये पूर्णपणे बसेल */
   width: 100%; 
   height: 100%; 
   border: 0;
 }
-  .feed-more{
-    display:inline-flex; align-items:center; gap:10px;
-    margin-top:24px;
-    color:var(--orange-soft); text-decoration:none;
-    font-family:var(--label); font-weight:600; font-size:0.95em;
-    border-bottom:1px solid transparent;
-    transition:border-color 0.2s ease;
-  }
-  .feed-more:hover{ border-color:var(--orange-soft); }
+
+/* खालील 'More' लिंक */
+.feed-more {
+  display: inline-flex; 
+  align-items: center; 
+  gap: 10px;
+  margin-top: 24px;
+  color: var(--orange-soft); 
+  text-decoration: none;
+  font-family: var(--label); 
+  font-weight: 600; 
+  font-size: 0.95em;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.feed-more:hover {
+  border-color: var(--orange-soft); 
+}
 
   /* ---------- Footer ---------- */
   footer{
